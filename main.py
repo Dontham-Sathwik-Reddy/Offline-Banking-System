@@ -740,7 +740,7 @@ def dashboard(g,pwdpresent):
 
     bank_name = Label(top_frame, text="Domestic Holdings Inc.", bg="black",fg="white", font=("",13))
     bank_name.pack(side=LEFT)
-    quitButton = Button(top_frame, text='X Close', bg="red", command=quit)
+    quitButton = Button(top_frame, text='X Close', bg="red", command=root.destroy)
     quitButton.pack(side=RIGHT)
     logoutButton = Button(top_frame, text='-> Log Out', bg="black",fg="white", command=login)
     logoutButton.pack(side=RIGHT)
@@ -970,7 +970,7 @@ def manager_dashboard():
     frame=Frame(root,bg="black")
     bank_name=Label(frame,text="Domestic Holdings Inc.",bg="black",fg="white")
     bank_name.pack(side=LEFT)
-    Button(frame,text='X Close',bg="red",command=quit).pack(side=RIGHT)
+    Button(frame,text='X Close',bg="red",command=root.destroy).pack(side=RIGHT)
     Button(frame,text="->] Log Out",fg="white",bg="black",command=login).pack(side=RIGHT)
     frame.pack(fill=BOTH)
 
@@ -1117,7 +1117,7 @@ def register():
 
     bank_name = Label(top_frame, text="Domestic Holdings Inc.", bg="black",fg="white",font=("",13))
     bank_name.pack(side=LEFT)
-    quitButton = Button(top_frame, text='X Close', bg="red", command=quit)
+    quitButton = Button(top_frame, text='X Close', bg="red", command=root.destroy)
     quitButton.pack(side=RIGHT)
 
     top_frame.pack(fill=BOTH)
@@ -1246,7 +1246,7 @@ def login():
 
     bank_name = Label(top_frame,text="Domestic Holdings Inc.",bg="black",fg="white",font=("",13))
     bank_name.pack(side=LEFT)
-    quitButton=Button(top_frame,text='X Close',bg="red",command=quit)
+    quitButton=Button(top_frame,text='X Close',bg="red",command=root.destroy)
     quitButton.pack(side=RIGHT)
 
     top_frame.pack(fill=BOTH)
