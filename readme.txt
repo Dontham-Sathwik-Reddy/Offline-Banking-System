@@ -4,5 +4,5 @@ install xlwt module using pip before running
 
 
 Developed by:
-Byreddy Rohith Reddy
+Byreddy Rohith Reddy (@Byreddyrohith)
 Dontham Sathwik Reddy
